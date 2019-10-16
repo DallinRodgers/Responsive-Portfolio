@@ -1,0 +1,193 @@
+:root {
+  --primary-color: #4aaaa5;
+  --secondary-color: #ffffff;
+  --regular-font: #777777;
+  --header-border: #cccccc;
+  --footer-bg: #666666;
+  --main-border: #dddddd;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn {
+  padding: 10px;
+  margin-top: 10px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  width: 150px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  transition: background 0.5s;
+}
+.btn:hover {
+  background: #408f8b;
+  cursor: pointer;
+}
+/* Header Styles */
+.header {
+  font-family: "Georgia", Times, Times New Roman, serif;
+  border-bottom: 3px solid var(--header-border);
+}
+.logo {
+  font-size: 35px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+.nav-item {
+  padding: 10px;
+}
+.nav-item a {
+  text-decoration: none;
+  color: var(--regular-font);
+  font-size: 20px;
+}
+
+/* Content Styles */
+main {
+  background: url(../images/criss-cross.png);
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  width: 100%;
+  min-height: 650px;
+  min-height: calc(100vh - 133px);
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+}
+.content {
+  background: var(--secondary-color);
+  padding: 30px;
+  min-width: 960px;
+  position: absolute;
+  top: 20px;
+}
+.content div {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+h1 {
+  font-size: 35px;
+  color: var(--primary-color);
+  font-family: "Georgia", Times, Times New Roman, serif;
+  padding: 10px 0 20px 0;
+  margin: 0 auto;
+  border-bottom: 3px solid var(--header-border);
+}
+.profile-img {
+  max-width: 300px;
+  height: auto;
+  flex-basis: 40%;
+}
+.about-text {
+  flex-basis: 60%;
+  padding: 0 10px;
+  font-size: 18px;
+  color: var(--regular-font);
+}
+.about-text p {
+  padding-bottom: 10px;
+}
+
+/* Form Styles */
+form {
+  padding-top: 20px;
+}
+form label,
+form input {
+  padding: 5px 0;
+}
+form label {
+  color: var(--regular-font);
+}
+form input::placeholder {
+  padding-left: 10px;
+}
+/* Portfolio Styles */
+.portfolio-item {
+  flex-basis: 30%;
+  position: relative;
+  min-width: 200px;
+  min-height: 200px;
+  margin: 10px;
+}
+.portfolio-item span {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 18px;
+  position: absolute;
+  bottom: 10px;
+}
+.portfolio-1 {
+  background: url(../images/portfolio-1.jpg);
+}
+.portfolio-2 {
+  background: url(../images/portfolio-2.jpg);
+}
+.portfolio-3 {
+  background: url(../images/portfolio-3.jpg);
+}
+.portfolio-4 {
+  background: url(../images/portfolio-4.jpg);
+}
+.portfolio-5 {
+  background: url(../images/portfolio-5.jpg);
+}
+/* Footer Styles */
+footer {
+  height: 50px;
+  background-color: var(--footer-bg);
+  position: relative;
+  border-top: 8px solid #4aaaa5;
+}
+footer span {
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  color: var(--secondary-color);
+}
